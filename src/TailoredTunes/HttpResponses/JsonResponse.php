@@ -26,8 +26,8 @@ class JsonResponse
         );
 
         $defaultOptions = [
-            'Content-Type' => 'application/json',
-            'Content-Length' => strlen($body)
+            'Content-Type: application/json',
+            'Content-Length: '.strlen($body)
         ];
 
         $finalHeaders = array_merge($defaultOptions, $headers);
